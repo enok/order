@@ -1,0 +1,7 @@
+spring.application.name: order
+
+order.expiration-seconds: 86400 # 1 day (TTL for deduplication in Redis)
+
+logging.level:
+  br.com.levva.order: TRACE
+  org.springframework.amqp: DEBUG
