@@ -36,7 +36,7 @@ public class OrderService {
         ProcessedOrder processedOrder = new ProcessedOrder(
                 order.id(),
                 order.orderDate(),
-                OrderStatus.Completed,
+                OrderStatus.COMPLETED,
                 order.items(),
                 total
         );

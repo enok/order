@@ -1,7 +1,6 @@
 package br.com.levva.order.entity;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
@@ -28,14 +27,9 @@ public record OrderItem(
 
     @JsonCreator
     public OrderItem(
-        @JsonProperty("product") Product product,
-        @JsonProperty("quantity") Integer quantity
+            @JsonProperty("product") Product product,
+            @JsonProperty("quantity") Integer quantity
     ) {
         this(product, quantity, product.price() * quantity);
     }
-
-//    @JsonProperty("subTotal")
-//    public Double calculateSubTotal() {
-//        return product.price() * quantity;
-//    }
 }

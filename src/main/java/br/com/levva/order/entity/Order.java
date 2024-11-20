@@ -34,6 +34,6 @@ public record Order(
             @JsonProperty("orderDate") LocalDateTime orderDate,
             @JsonProperty("items") List<OrderItem> items
     ) {
-        this(id, orderDate, items, OrderStatus.Pending);
+        this(id, orderDate, items, OrderStatus.PENDING);
     }
 }
