@@ -6,11 +6,9 @@ import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
-import lombok.Builder;
 
 import java.io.Serializable;
 
-@Builder
 public record OrderItem(
         @NotNull(message = "Product cannot be null.")
         @Valid
