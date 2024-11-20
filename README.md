@@ -2,6 +2,8 @@
 
 A Spring Boot application for managing orders and products. This project demonstrates asynchronous processing with RabbitMQ, caching with Redis, and persistent storage with MongoDB.
 
+![order.drawio.png](order.drawio.png)
+
 ## **Features**
 - **Order Management**: Create and retrieve orders.
 - **Asynchronous Processing**: Process orders using RabbitMQ for reliable messaging.
